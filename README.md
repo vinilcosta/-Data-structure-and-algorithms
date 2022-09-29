@@ -1,1 +1,3 @@
-# -Data-structure-and-algorithms
+# Estrutura de dados 
+
+**Cap-7**
