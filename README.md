@@ -1,4 +1,4 @@
-## Algoritmos Cápitulo 5
+## Estrutura de Dados Cap 5
 
 **Estrutura de Dados de Fila**
 
