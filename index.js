@@ -17,11 +17,27 @@ class Set{
         return false;
     }
 
-    Delete(element){ }
+    Delete(element){
+        if(this.has(element)){
+            delete this.items[element];
+            return true;
+        }
+        return false
+     }
 
-    clear(){ }
+    clear(){ 
+        this.items ={};
+    }
 
-   size(){}
+   size(){
+    let count = 0;
+    for(let key in this.items){
+        if(this.items.hasOwnProperty(key)){
+            count++;
+        }
+    }
+    return count;
+   }
 
    values(){}
 
