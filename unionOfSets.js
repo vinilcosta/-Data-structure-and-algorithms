@@ -20,7 +20,7 @@ class set {
           return true;
         }
         return false;
-      }
+      } 
     
       clear() {
         this.items = {};
@@ -46,7 +46,7 @@ class set {
         return values;
       }
 
-      union(unionSet){
+      union(otherSet){
         const unionSet = new Set();
         this.values().forEach(value => unionSet.add(value));
         otherSet.values().forEach(value => unionSet.add(value));
@@ -54,3 +54,19 @@ class set {
       }
 }
 
+const setA =new set();
+
+setA.add(1);
+setA.add(2);
+setA.add(3);
+setA.add(4);
+
+const setB =new set();
+
+setB.add(5);
+setB.add(6);
+setB.add(7);
+setB.add(8);
+
+const unionAB =setA.union(setB);
+console.log(unionAB.values());
